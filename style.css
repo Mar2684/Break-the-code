@@ -1,0 +1,231 @@
+
+html {
+    width: 100vw;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45%;
+}
+#cartesQuestions  {
+    width: 60%;
+    height: 100%;
+    border-collapse : separate;
+    border-spacing : 1%;;
+    font-family: cursive;
+    text-align: justify;
+    font-size: 1.5vw;
+}
+.carte {
+    width: 33%;
+    height: 50%;
+    box-sizing: border-box;
+    padding: 1%;
+    border: 0.5vh solid rgb(93, 152, 5);
+    border-radius: 2vh;
+    background-color: whitesmoke;
+}
+.carte:hover {
+    box-shadow: 0.3vw -0.5vh 0.3vw black;
+    transition: transform 0.5s;
+    transform: translate(-0.3vw,0.5vh);
+}
+.no-hover td:hover {
+    box-shadow: none;
+    transition: none;
+    transform: none;
+}
+footer {
+    position: relative;
+    top: 1.5%;
+    left: 20%;
+    box-sizing: border-box;
+    width: 60%;
+    height: 53%;
+    border: thick solid black;
+}    
+#cartesTuilesFicheNotes {
+    box-sizing: border-box;
+    position: relative;
+    width: 60%;
+    height: 26%;
+    border-collapse: separate;
+    border-spacing: 2%;
+    font-family: cursive;
+    text-align: center;
+    table-layout: fixed;
+}
+.tuileFicheNotes {
+    box-sizing: border-box;
+    width: 3%;
+    height: 13%;
+    padding: 0px;
+    border: 0.5vh solid rgb(93, 152, 5);
+    border-radius: 1vh;
+    background-color: whitesmoke;
+    font-size: 1.4vw;
+    text-shadow: 0 0 2px black;
+    position: relative;
+    overflow: hidden;
+}
+#ligneFicheNotes1 {
+    color: white;
+}
+#ligneFicheNotes2 {
+    color: black;
+}
+.tuileFicheNotes::before,
+.tuileFicheNotes::after {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 0.5vh;
+    background-color: red;
+    top: 100%;
+    left: 0%;
+    transform-origin: center center;
+    transform: rotate(45deg) translate(-50%, -50%);
+    opacity: 0;
+}
+
+.tuileFicheNotes.clicked::before,
+.tuileFicheNotes.clicked::after {
+    opacity: 1;
+}
+#ficheEnqueteFicheNotes {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    height: 74%;
+    border-collapse : separate;
+    font-family: cursive;
+    text-align: justify;
+    font-size: 1.5vw;
+    table-layout: fixed;
+}
+.fichesPlayers {
+    box-sizing: border-box;
+    width: 100%;
+    height: calc(100%/3);
+}
+.icon {
+    box-sizing: border-box;
+    width: 10%;
+    height: calc(100% / 3);
+    background-color: whitesmoke;
+    border: 0.5vh solid rgb(93, 152, 5);
+    border-radius: 1vh;
+    align-items: center;
+    text-align: center;
+    font-size: 40%;
+    overflow: hidden;
+} 
+.icon img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 8vh;
+    object-fit: contain;
+    margin: auto;
+}
+.propTuiles {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    border: 0.5vh solid rgb(93, 152, 5);
+    border-radius: 1vh;
+}
+.zoneTexte {
+    box-sizing: border-box;
+    width: 30%;
+    height: calc(100% / 3);
+    background-color: whitesmoke;
+    overflow: hidden;
+} 
+.zoneTexte textarea {
+    position: relative;
+    box-sizing: border-box;
+    border: 0.5vh solid rgb(93, 152, 5);
+    border-radius: 1vh;
+    resize: none;
+    margin: 0px;
+    top: 0.5vh;
+    width: 100%;
+    height: 100%;
+}
+.zoneTexte textarea:focus {
+    position: relative;
+    box-sizing: border-box;
+    border: 0.5vh solid rgb(152, 5, 5);
+    border-radius: 1vh;
+    resize: none;
+    margin: 0px;
+    top: 0.5vh;
+    width: 100%;
+    height: 100%;
+}
+.input-container {
+    height: 90%;
+    width: 20%;
+    border:  0.5vh solid rgb(93, 152, 5);
+    border-radius: 1vh; 
+    display: flex;
+}
+.button-container {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.propTuiles textarea {
+    box-sizing: border-box;
+    text-shadow: black 0px 0px 0.8em;
+    background-color: whitesmoke;
+    height: 100%;
+    width: 70%;
+    border-radius: 0.5vh;
+    resize: none;
+    text-align: center;
+    font-size: 7.94vh;
+}
+.propTuiles input {
+    width: 20%;
+    height: calc(100% / 7);
+    margin: auto;
+}
+
+
+
+#cartesTuiles {
+    position: absolute;
+    top: 75%;
+    width: 18%;
+    height: 10%;
+    font-family: cursive;
+    text-align: center;
+    text-shadow: black 0px 0px 1em;
+    font-size: 1.8vw;
+}
+.tuile {
+    box-sizing: border-box;
+    width: 25%;
+    height: 100%;
+    border: 0.5vh solid rgb(93, 152, 5);
+    border-radius: 1vh;
+    background-color: whitesmoke;
+}

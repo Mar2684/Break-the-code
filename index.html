@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Break the code</title>
+        <link href="style.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <table id="cartesQuestions">
+                <tr id="ligne1">
+                    <td id="carte1" class="carte"></td>
+                    <td id="carte2" class="carte"></td>
+                    <td id="carte3" class="carte"></td>
+                </tr>
+                <tr id="ligne2">
+                    <td id="carte4" class="carte"></td>
+                    <td id="carte5" class="carte"></td>
+                    <td id="carte6" class="carte"></td>
+                </tr>
+            </table>    
+        </header>
+        <footer>
+            <table id="cartesTuilesFicheNotes">
+                <tr id="ligneFicheNotes1">
+                    <td id="tuileFicheNotes0" class="tuileFicheNotes">0</td>
+                    <td id="tuileFicheNotes1" class="tuileFicheNotes">1</td>
+                    <td id="tuileFicheNotes2" class="tuileFicheNotes">2</td>
+                    <td id="tuileFicheNotes3" class="tuileFicheNotes">3</td>
+                    <td id="tuileFicheNotes4" class="tuileFicheNotes">4</td>
+                    <td id="tuileFicheNotes5" class="tuileFicheNotes" style="color: green;">5</td>
+                    <td id="tuileFicheNotes6" class="tuileFicheNotes">6</td>
+                    <td id="tuileFicheNotes7" class="tuileFicheNotes">7</td>
+                    <td id="tuileFicheNotes8" class="tuileFicheNotes">8</td>
+                    <td id="tuileFicheNotes9" class="tuileFicheNotes">9</td>
+                </tr>
+                <tr id="ligneFicheNotes2">
+                    <td id="tuile2FicheNotes0" class="tuileFicheNotes">0</td>
+                    <td id="tuile2FicheNotes1" class="tuileFicheNotes">1</td>
+                    <td id="tuile2FicheNotes2" class="tuileFicheNotes">2</td>
+                    <td id="tuile2FicheNotes3" class="tuileFicheNotes">3</td>
+                    <td id="tuile2FicheNotes4" class="tuileFicheNotes">4</td>
+                    <td id="tuile2FicheNotes5" class="tuileFicheNotes" style="color: green;">5</td>
+                    <td id="tuile2FicheNotes6" class="tuileFicheNotes">6</td>
+                    <td id="tuile2FicheNotes7" class="tuileFicheNotes">7</td>
+                    <td id="tuile2FicheNotes8" class="tuileFicheNotes">8</td>
+                    <td id="tuile2FicheNotes9" class="tuileFicheNotes">9</td>
+                </tr>
+            </table>
+            <table id="ficheEnqueteFicheNotes">
+                <tr id="player_1" class="fichesPlayers">
+                    <td class="icon part_ficheNotes"><img src="Profile.svg" alt="mage d'une icon d'un joueur">Player 1</td>
+                    <td class="propTuiles part_ficheNotes">
+                        <div class="input-container"><textarea maxlength="1" cols="1" rows="1" class="reqChiffre" oninput="this.value = this.value.replace(/[^0-9]/, '');"></textarea><div class="button-container"><input type="button" style="background-color: black;" onclick="ChangeColore(this, 'black')"><input type="button" style="background-color: white;" onclick="ChangeColore(this, 'white')"><input type="button" style="background-color: green;" onclick="ChangeColore(this, 'green')"></div></div>
+                        <div class="input-container"><textarea maxlength="1" cols="1" rows="1" class="reqChiffre" oninput="this.value = this.value.replace(/[^0-9]/, '');"></textarea><div class="button-container"><input type="button" style="background-color: black;" onclick="ChangeColore(this, 'black')"><input type="button" style="background-color: white;" onclick="ChangeColore(this, 'white')"><input type="button" style="background-color: green;" onclick="ChangeColore(this, 'green')"></div></div>
+                        <div class="input-container"><textarea maxlength="1" cols="1" rows="1" class="reqChiffre" oninput="this.value = this.value.replace(/[^0-9]/, '');"></textarea><div class="button-container"><input type="button" style="background-color: black;" onclick="ChangeColore(this, 'black')"><input type="button" style="background-color: white;" onclick="ChangeColore(this, 'white')"><input type="button" style="background-color: green;" onclick="ChangeColore(this, 'green')"></div></div>
+                        <div class="input-container"><textarea maxlength="1" cols="1" rows="1" class="reqChiffre" oninput="this.value = this.value.replace(/[^0-9]/, '');"></textarea><div class="button-container"><input type="button" style="background-color: black;" onclick="ChangeColore(this, 'black')"><input type="button" style="background-color: white;" onclick="ChangeColore(this, 'white')"><input type="button" style="background-color: green;" onclick="ChangeColore(this, 'green')"></div></div>
+                    </td>
+                    <td class="zoneTexte part_ficheNotes"><textarea name="Notes" placeholder="Commentaires..."></textarea></td>
+                </tr>
+                <tr id="player_2" class="fichesPlayers">
+                    <td class="icon part_ficheNotes"><img src="Profile.svg" alt="mage d'une icon d'un joueur">Player 2</td>
+                    <td class="propTuiles part_ficheNotes">
+                        <div class="input-container"><textarea maxlength="1" cols="1" rows="1" class="reqChiffre" oninput="this.value = this.value.replace(/[^0-9]/, '');"></textarea><div class="button-container"><input type="button" style="background-color: black;" onclick="ChangeColore(this, 'black')"><input type="button" style="background-color: white;" onclick="ChangeColore(this, 'white')"><input type="button" style="background-color: green;" onclick="ChangeColore(this, 'green')"></div></div>
+                        <div class="input-container"><textarea maxlength="1" cols="1" rows="1" class="reqChiffre" oninput="this.value = this.value.replace(/[^0-9]/, '');"></textarea><div class="button-container"><input type="button" style="background-color: black;" onclick="ChangeColore(this, 'black')"><input type="button" style="background-color: white;" onclick="ChangeColore(this, 'white')"><input type="button" style="background-color: green;" onclick="ChangeColore(this, 'green')"></div></div>
+                        <div class="input-container"><textarea maxlength="1" cols="1" rows="1" class="reqChiffre" oninput="this.value = this.value.replace(/[^0-9]/, '');"></textarea><div class="button-container"><input type="button" style="background-color: black;" onclick="ChangeColore(this, 'black')"><input type="button" style="background-color: white;" onclick="ChangeColore(this, 'white')"><input type="button" style="background-color: green;" onclick="ChangeColore(this, 'green')"></div></div>
+                        <div class="input-container"><textarea maxlength="1" cols="1" rows="1" class="reqChiffre" oninput="this.value = this.value.replace(/[^0-9]/, '');"></textarea><div class="button-container"><input type="button" style="background-color: black;" onclick="ChangeColore(this, 'black')"><input type="button" style="background-color: white;" onclick="ChangeColore(this, 'white')"><input type="button" style="background-color: green;" onclick="ChangeColore(this, 'green')"></div></div>
+                    </td>
+                    <td class="zoneTexte part_ficheNotes"><textarea name="Notes" placeholder="Commentaires..."></textarea></td>
+                </tr>
+                <tr id="player_3" class="fichesPlayers">
+                    <td class="icon part_ficheNotes"><img src="Profile.svg" alt="mage d'une icon d'un joueur">Player 3</td>
+                    <td class="propTuiles part_ficheNotes">
+                        <div class="input-container"><textarea maxlength="1" cols="1" rows="1" class="reqChiffre" oninput="this.value = this.value.replace(/[^0-9]/, '');"></textarea><div class="button-container"><input type="button" style="background-color: black;" onclick="ChangeColore(this, 'black')"><input type="button" style="background-color: white;" onclick="ChangeColore(this, 'white')"><input type="button" style="background-color: green;" onclick="ChangeColore(this, 'green')"></div></div>
+                        <div class="input-container"><textarea maxlength="1" cols="1" rows="1" class="reqChiffre" oninput="this.value = this.value.replace(/[^0-9]/, '');"></textarea><div class="button-container"><input type="button" style="background-color: black;" onclick="ChangeColore(this, 'black')"><input type="button" style="background-color: white;" onclick="ChangeColore(this, 'white')"><input type="button" style="background-color: green;" onclick="ChangeColore(this, 'green')"></div></div>
+                        <div class="input-container"><textarea maxlength="1" cols="1" rows="1" class="reqChiffre" oninput="this.value = this.value.replace(/[^0-9]/, '');"></textarea><div class="button-container"><input type="button" style="background-color: black;" onclick="ChangeColore(this, 'black')"><input type="button" style="background-color: white;" onclick="ChangeColore(this, 'white')"><input type="button" style="background-color: green;" onclick="ChangeColore(this, 'green')"></div></div>
+                        <div class="input-container"><textarea maxlength="1" cols="1" rows="1" class="reqChiffre" oninput="this.value = this.value.replace(/[^0-9]/, '');"></textarea><div class="button-container"><input type="button" style="background-color: black;" onclick="ChangeColore(this, 'black')"><input type="button" style="background-color: white;" onclick="ChangeColore(this, 'white')"><input type="button" style="background-color: green;" onclick="ChangeColore(this, 'green')"></div></div>
+                    </td>
+                    <td class="zoneTexte part_ficheNotes"><textarea name="Notes" placeholder="Commentaires..."></textarea></td>
+                </tr>
+            </table>
+        </footer>
+        <p style="position: absolute; top: 68%; font-size: 300%; margin: 0px;">Your Code :</p>
+        <table id="cartesTuiles">
+            <td id="tuile1" class="tuile"></td>
+            <td id="tuile2" class="tuile"></td>
+            <td id="tuile3" class="tuile"></td>
+            <td id="tuile4" class="tuile"></td>
+        </table>
+        <script>
+            let questions = [
+                "Est-ce que le chiffre de ta tuile C est strictement supérieur à 4 ?", 
+                "Quelle est la somme des chiffres de tes tuiles centrales ?", 
+                "Combien de tuiles avec un chiffre noir as-tu ?", 
+                "Où sont tes tuiles 6 ou tes tuiles 7 ?", 
+                "Combien de tuiles avec des chiffres égaux as-tu ?", 
+                "Combien de tuiles avec un chiffre impair as-tu ?", 
+                "Où sont tes tuiles dont les chiffres se suivent ?", 
+                "Quelle est la somme de tes chiffres noirs ?", 
+                "Quelle est la somme des chiffres de tes trois tuiles de gauche ?", 
+                "Combien de tuiles avec un chiffre pair as-tu ?", 
+                "Quelle est la différence entre ton plus grand chiffre et ton plus petit chiffre ?", 
+                "Quelle est la somme des chiffres de tes trois tuiles de droite ?", 
+                "Quelle est la somme de tes chiffres blancs ?", 
+                "Où sont tes tuiles 3 ou tes tuiles 4 ?", 
+                "Où sont tes tuiles voisines avec des chiffres de même couleur ?", 
+                "Où sont tes tuiles 8 ou tes tuiles 9 ?"
+            ]
+            let tuiles = [
+                '0white','0black','1white','1black','2white','2black','3white','3black','4white','4black','5green','5green','6white','6black','7white','7black','8white','8black','9white','9black'
+            ]
+            let ind_question
+            let carte_info
+
+            function handleclick(event) {
+                let carte_info = event.currentTarget
+                document.getElementById('cartesQuestions').classList.add('no-hover'); 
+                carte_info.style.border = "1vh solid red"
+                if (carte_info.textContent.length == 38) {
+                    tuile = prompt(`${carte_info.textContent.substr(12,8)} ou ${carte_info.textContent.substr(28,8)} ?`)
+                    carte_info.textContent = `Où sont tes ${tuile} ?`
+                }
+                document.querySelectorAll('.carte').forEach(carte => {
+                    carte.removeEventListener('click', handleclick);
+                });
+            }
+
+            function changecard() {
+                for (let i = 1;i < 7;i++) {
+                    ind_question = Math.floor(Math.random() * questions.length);
+                    document.getElementById(`carte${i}`).textContent = questions[ind_question]
+                    document.getElementById(`carte${i}`).addEventListener("click", handleclick)
+                }
+            }
+
+            function set_tuiles() {
+                for (let i = 1;i < 5;i++) {
+                    nmbr_set = Math.floor(Math.random() * tuiles.length);
+                    document.getElementById(`tuile${i}`).textContent = tuiles[nmbr_set][0]
+                    document.getElementById(`tuile${i}`).style.setProperty('color', tuiles[nmbr_set].slice(1, tuiles[nmbr_set].length));
+                    tuiles.splice(nmbr_set, 1)
+                    console.log(tuiles)
+                }
+            }
+            document.querySelectorAll('.tuileFicheNotes').forEach(function(tuile) {
+                tuile.addEventListener('click', function() {
+                    console.log('Tuile cliquée:', tuile.textContent);
+                    if (tuile.classList.length == "1") {
+                        tuile.classList.add('clicked');
+                    } else {
+                        tuile.classList.remove('clicked')
+                    }
+                });
+            });
+            function ChangeColore(button, color) {
+                if (color != 'green' || (color == 'green' && button.closest('.input-container').querySelector('.reqChiffre').value == 5)) {
+                    button.closest('.input-container').querySelector('.reqChiffre').style.color = color
+                }
+            }
+            changecard()
+            set_tuiles()
+        </script>
+    </body>
+</html>
